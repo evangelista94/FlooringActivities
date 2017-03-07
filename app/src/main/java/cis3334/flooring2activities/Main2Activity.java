@@ -7,7 +7,7 @@ import android.widget.TextView;
 public class Main2Activity extends AppCompatActivity {
 
     TextView tvLength, tvWidth, tvFlooring;
-    String length, width, flooring;
+    Double length, width, flooring;
 
 
     @Override
@@ -22,14 +22,15 @@ public class Main2Activity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
 
-        length = extras.getSerializable("MainLength").toString();
-        width = extras.getSerializable("MainWidth").toString();
+        length = extras.getDouble("MainLength");
+        width = extras.getDouble("MainWidth");
+        flooring = extras.getDouble("MainFlooring");
 
 
 
         tvLength.setText("Length: " + length);
         tvWidth.setText("Width: " + width);
-        //tvFlooring.setText("Flooring needed: " + flooring);
+        tvFlooring.setText("Flooring needed: " + flooring);
 
     }
 }

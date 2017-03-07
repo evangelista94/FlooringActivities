@@ -22,11 +22,12 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:ems="10"
         android:layout_below="@+id/textViewLength"
         android:layout_alignParentStart="true"
-        android:id="@+id/editTextLength" />
+        android:id="@+id/editTextLength"
+        android:hint="length" />
 
     <TextView
         android:text="Room Width"
@@ -40,11 +41,12 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:ems="10"
         android:layout_below="@+id/textViewWidth"
         android:layout_alignParentStart="true"
-        android:id="@+id/editTextWidth" />
+        android:id="@+id/editTextWidth"
+        android:hint="width" />
 
     <Button
         android:text="Calculate Area"
